@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meta VR</title>
+    <link rel="stylesheet" href="buyNow1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="headerLeft">
+            <div class="topdiv1box1">
+                <div class="companyName">
+                    <div>
+                       NeoVision
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerRight">
+            <div>
+                <button onclick="window.location='mainpage.html'">
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="bodyDiv">
+        <div class="leftDiv">
+            <div class="mainImg">
+                <!-- <div></div> -->
+                <img src="img/Valve1.png" alt="" id="change" />
+            </div>
+            <div class="optImg">
+                <div>
+                    <img src="img/Valve1.png" alt="" id="img/Valve1.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/Valve2.png" alt="" id="img/Valve2.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/Valve3.png" alt="" id="img/Valve3.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/Valve4.png" alt="" id="img/Valve4.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+            </div>
+        </div>
+        <div class="rightDiv">
+            <div class="heading">
+                Valve Index
+                <div></div>
+            </div>
+            <div class="description">
+                Visual clarity isn’t just about panel resolution. Multiple attributes contribute to how clearly and comfortably you see details in VR.
+                Fine-tuned lenses offer the sharpest, widest view across the eye's full range of travel.
+                <div></div>
+            </div>
+            <div class="specs">
+                <ul>
+                    <li>
+                        <b>Display:</b> Dual 1440 x 1600 LCDs
+                    </li>
+                    <li>
+                        <b>Framerate:</b> 80/90/120/144Hz
+                    </li>
+                    <li>
+                        <b>Hardware:</b> New Snapdragon XR2+ platform
+                    </li>
+                    <li>
+                        <b>Field of View: </b> User experience 20º more than the HTC Vive
+                    </li>
+                    <li>
+                        <b>Sensors: </b>10 advanced VR/MR sensors to support 6 degrees of freedom inside-out SLAM tracking
+                    </li>
+                </ul>
+            </div>
+            <div class="buy">
+                <div class="price">₹1,12,990</div>
+                <div class="buttonDiv">
+                    <button onclick="window.location='payment.html'">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2023 All Rights Reserved. Designed by Gaurav Bansal
+    </div>
+
+    <script>
+        function changeImage(ele) {
+            var image_id = document.getElementById("change");
+            image_id.src = ele.id;
+        }
+    </script>
+</body>
+
+</html>

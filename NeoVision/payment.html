@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+   
+</head>
+<header>
+    <div class="header">
+        <div class="headerLeft">
+            <div class="topdiv1box1">
+                <div class="companyName">
+                    <div>
+                        NeoVision
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerRight">
+            <div>
+                <button onclick="window.location='mainpage.html'">
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="main">
+    <div class="left">
+    </div>
+    <div class="right">
+    
+    <form id="paymentForm">
+        <div class="payment-options">
+            <h2>Select Payment Method:</h2>
+            <div class="payment-methods">
+                <div class="payment-method" data-method="creditCard" onclick="selectPaymentMethod('creditCard')">
+                    <img src="img/credit_card.png" alt="Credit Card">
+                </div>
+                <div class="payment-method" data-method="paypal" onclick="selectPaymentMethod('paypal')">
+                    <img src="img/paypal.png" alt="PayPal">
+                </div>
+                <div class="payment-method" data-method="upi" onclick="selectPaymentMethod('upi')">
+                    <img src="img/UPI.png" alt="UPI">
+                </div>
+            </div>
+        </div>
+        <div id="creditCardSection" class="payment-section">
+            <h2>Credit Card Details</h2>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" placeholder="Card Number">
+        </div>
+        <div id="paypalSection" class="payment-section">
+            <h2>PayPal</h2>
+            <label for="paypalEmail">PayPal Email:</label>
+            <input type="email" id="paypalEmail" placeholder="PayPal Email">
+        </div>
+        <div id="upiSection" class="payment-section">
+            <h2>UPI Details</h2>
+            <label for="upiID">UPI ID:</label>
+            <input type="text" id="upiID" placeholder="UPI ID">
+        </div>
+        <div class="user-data">
+            <h2>User Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email">
+
+        </div>
+        <button onclick="window.location.href='mainpage.html'" >Submit Payment</button>
+        
+     </form>
+       </div>
+        </div>
+        <footer>
+            <div class="footer">
+                &copy; 2023 All Rights Reserved. Designed by Gaurav Bansal
+            </div>
+        </footer>
+    
+    <script>
+        function selectPaymentMethod(method) {
+
+            document.querySelectorAll('.payment-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+
+            document.getElementById(method + 'Section').style.display = 'block';
+        }
+        
+        document.addEventListener('DOMContentLoaded', function () {
+
+            document.querySelectorAll('.payment-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+
+            selectPaymentMethod('creditCard');
+        });
+
+    </script>
+</body>
+</html>

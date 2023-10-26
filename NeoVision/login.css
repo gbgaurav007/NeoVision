@@ -1,0 +1,108 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    font-size: 2.5vh;
+
+}
+body {
+    background: rgb(32,6,61);
+    background: linear-gradient(22deg, rgba(32,6,61,1) 31%, rgba(51,4,111,1) 54%, rgba(98,0,238,1) 93%, rgba(142,63,255,1) 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.out-box{
+    height: 75vh;
+    width: 75%;
+    display: flex;
+    background-color: rgba(98,0,238,0.4);
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.in-box{
+    padding: 8% 5% 0% 10%;
+    width: 50%;
+}
+.box h1{
+    text-align: center;
+    font-size: 5vh;
+}
+.forms{
+    padding: 8% 3% 8% 3%;
+}
+.forms a{
+    text-decoration: none;
+}
+.log{
+    margin: 3% 0 5% 0;
+    height: 7%;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+}
+.remember{
+    margin: 3% 0 3% 0;
+    font-size: 2vh;
+}
+#button{
+    margin: 3% 0 3% 0;
+    width: 100%;
+    height: 8%;
+    border: none;
+    background-color: rgba(115,15,255,1);
+}
+#button:hover{
+    background-color: #6200EE;
+}
+.logo{
+    width: 50%;
+    max-width: 50%;
+    padding: 10% 0% 10% 10%;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    width: 50%;
+    max-width: 50%;
+    padding: 8% 5% 0% 10%;
+}
+
+input{
+    padding-left: 2%;
+}
+#sign-up a{
+    text-decoration: underline;
+    text-align: center;
+    
+}
+#sign-up span{
+    font-size: 1.5vh;
+    margin-left:28% ;
+}
+.info{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 50% 50% 50%;
+    padding-top: 10%;
+    margin-left: 5%;
+}
+.about-div h3{
+    font-weight: bold;
+}
+.about-div p{
+    margin-top: 5%;
+    font-size: 1.5vh;
+}
+.about-div a:hover{
+    color: blueviolet;
+}
+.terms{
+    font-size: 1.1vw;
+    padding-left: 1vw;
+}

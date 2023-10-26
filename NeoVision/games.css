@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    /* color: white; */
+    font-size: 1.3vw;
+    background: black;
+    background: linear-gradient(to bottom, rgb(76, 16, 42) 0%, rgb(21, 21, 22) 100%);
+}
+
+.nav-bar {
+    background: linear-gradient(to bottom, rgb(76, 16, 42, 0.5) 0%, rgb(21, 21, 22) 100%);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: saturate(200%) blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.Logo {
+    margin: 1vh;
+    margin-left: 4%;
+    font-weight: bold;
+}
+
+.Logo a {
+    text-decoration: none;
+    font-size: 2vw;
+    color: white;
+}
+
+.Logo a:hover {
+    color: rgb(190, 0, 82);
+}
+
+.nav-content {
+    width: 130vh;
+}
+
+.nav {
+    width: 100%;
+    margin-top: 1.5%;
+}
+
+.nav>li {
+    display: inline;
+    padding: 0 5vh;
+}
+
+.Sign-in {
+    margin-top: 1.2%;
+}
+
+.Sign-in a {
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+.hov a {
+    color: White;
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+.hov a:hover {
+    color: rgb(190, 0, 82);
+}
+
+.img1 {
+    width: 100%;
+    background-size: cover;
+    background-image: url("img/gaming4.jpg");
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+.start {
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inside-start {
+    padding: 10vw 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inside-start h1 {
+    font-size: 3.5vw;
+}
+
+.inside-start span {
+    color: #be0052;
+}
+
+.inside-start p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.7vw;
+}
+
+.inside-start a {
+    font-size: 1.7vw;
+    margin-top: 2vw;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #be0052;
+    border: 1px solid #be0052;
+    border-radius: 20px;
+}
+
+.inside-start a:hover {
+    color: #be0052;
+    border: 1px solid #be0052;
+    background-color: transparent;
+}
+
+.part {
+    height: 60vh;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1 {
+    background: linear-gradient(to bottom, rgb(76, 16, 42, 0.5) 0%, rgb(21, 21, 22) 100%);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.part-inside {
+    height: 50vh;
+    width: 85%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-backdrop-filter: saturate(200%) blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.part-inside p {
+    margin: 2vw;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.part-inside button {
+    margin: 1vw;
+    font-size: 1.8vw;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 2px solid #be0052;
+    color: white;
+    background-color: #be0052;
+}
+
+.part-inside button:hover {
+    color: #be0052;
+    border: 2px solid #be0052;
+    background-color: transparent;
+}
+
+.part div {
+    margin: 2vw;
+}
+
+.part-left {
+    width: 50%;
+}
+
+.part-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p2{
+    background-size: cover;
+    background-image: url(img/beat-saber.png);
+    background-attachment: fixed;
+}
+
+.part3{
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.part-in{
+    background: linear-gradient(to bottom, rgb(76, 16, 42) 0%, rgb(21, 21, 22) 100%);
+}
+.Catagory{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-evenly;
+    width: 25vw;
+}
+.Catagory iframe{
+    width: 25vw;
+    height: 15vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.info{
+    padding:2vh 0;
+}
+.info button{
+    margin-top:1vw;
+    font-size: 1.5vw;
+    padding: 10px 15px;
+    color: white;
+    border: 2px solid #be0052;
+    background-color: #be0052;
+    border-radius: 30px;
+}
+.info button:hover{
+    background-color: transparent;
+    color: #be0052;
+    border: 2px solid #be0052;
+}

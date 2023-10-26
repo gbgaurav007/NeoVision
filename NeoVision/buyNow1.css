@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.1vw;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: rgb(4, 4, 4);
+    background: linear-gradient(60deg, rgba(4, 4, 4, 1) 34%, rgba(12, 4, 24, 1) 62%, rgba(34, 3, 79, 1) 85%, rgba(54, 2, 129, 1) 97%, rgba(98, 0, 238, 1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.companyName div {
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 2vw;
+    height: 100%;
+}
+.companyName div:hover{
+    color: #6200EE;
+}
+
+.headerRight {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.headerRight div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerRight div button {
+    background-color: #6200EE;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #6200EE;
+}
+
+.headerRight div button:hover {
+    background-color: transparent;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    color: #6200EE;
+    background-color: white;
+}
+
+/* Body */
+
+.bodyDiv {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftDiv {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImg {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImg img {
+    height: 80%;
+    width: 80%;
+    filter: drop-shadow(0px 0px 7px black);
+}
+
+.optImg {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.optImg div {
+    height: 80%;
+    width: 20%;
+}
+
+.optImg div img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.rightDiv {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading,
+.description,
+.specs,
+.buy {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.heading {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2vw;
+    letter-spacing: 2px;
+
+}
+
+
+.description {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.description div {
+    width: 100%;
+    height: 1.5px;
+    background-color: gainsboro;
+}
+
+.specs {
+    height: 40%;
+    text-align: justify;
+    font-size: 1.2vw;
+    ;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #6200EE;
+    font-weight: 900;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.specs ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.buy {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.price {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.buttonDiv {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonDiv button {
+    width: 80%;
+    height: 70%;
+    background-color: #6200EE;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s all;
+}
+
+.buttonDiv button:hover {
+    background-color: white;
+    color: rgba(115, 15, 255, 1);
+}
+
+.footer {
+    width: 100%;
+    height: 5vh;
+    background-color: #6200EE;
+    display: flex;
+    padding-left: 2%;
+    align-items: center;
+}

@@ -1,0 +1,198 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: rgb(4, 4, 4);
+    background: linear-gradient(60deg, rgba(4,4,4,1)34%, rgba(12,4,24,1)62%, rgba(34,3,79,1)85%, rgba(98,0,238,1)100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.companyName div {
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 2vw;
+    height: 100%;
+    color: white;
+}
+.companyName div:hover{
+    color: #6200EE;
+}
+
+.headerRight {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.headerRight div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerRight div button {
+    background-color: #6200EE;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #6200EE;
+}
+
+.headerRight div button:hover {
+    background-color: transparent;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    color: #6200EE;
+    background-color: white;
+}
+
+.rate-heading{
+    font-size: 28px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.rating-summary {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    background-color: whitesmoke;
+    width: fit-content;
+    padding: 25px;
+    margin-left: 38%;
+    border-radius: 10px;
+}
+
+.rate-num{
+    display: flex;
+    width: fit-content;
+    height: 20px;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: rgb(236, 236, 236);
+    margin-left: 25px;
+}
+
+.rate-num p{
+    margin-top: 1px;
+}
+
+.stars {
+    color: orange;
+}
+
+.checked {
+    color: orange;
+}
+
+.rate-progress div{
+    margin-bottom: -17px;
+}
+.rate-progress p{
+    font-size: 15px;
+}
+
+.rate-progress progress{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 170px;
+    height: 10px;
+    margin-top: 21px;
+    margin-left: 20px;
+}
+
+.rate-progress progress::-webkit-progress-bar{
+    background: rgb(236, 236, 236);
+    border-radius: 15px;
+}
+
+.rate-progress progress::-webkit-progress-value{
+    background: orange;
+    border-radius: 15px;
+}
+
+.loadbtn {
+    background-color: #6200EE;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #6200EE;
+    border-radius: 5px;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.loadbtn:hover{
+    cursor: pointer;
+    background-color: #7a2ce7;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-left: 100px;
+    margin-bottom: 35px;
+    width: 35%;
+    text-align: left;
+    color: white;
+    border-radius: 10px;
+    background: linear-gradient(60deg, rgb(39, 39, 39)34%, rgb(49, 47, 58)62%, rgb(37, 50, 69)85%, rgb(61, 61, 61)100%);
+}
+
+.review-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.rating-stars {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.user-name{
+    font-size: 14px;
+    margin-left: 300px;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: right;
+    margin-right: 22px;
+    margin-top: -51px;
+}

@@ -1,0 +1,173 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Comparison</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="compare.css">
+</head>
+<header>
+    <div class="header">
+        <div class="headerLeft">
+            <div class="topdiv1box1">
+                <div class="companyName">
+                    <div>
+                        NeoVision
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerRight">
+            <div>
+                <button onclick="window.location='mainpage.html'">
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <h1>Device Comparison</h1>
+
+    <div class="device-list">
+        <label for="device1">Device 1:</label>
+        <select id="device1" style="background-color: black;">
+            <option value="deviceA">PlayStation VR2</option>
+            <option value="deviceB">meta Oculus pro</option>
+            <option value="deviceC">Apple Vision Pro</option>
+            <option value="deviceD">Valve Pro</option>
+            <option value="deviceE">PS Pro</option>
+        </select>
+
+        <label for="device2">Device 2:</label>
+        <select id="device2" style="background-color: black;">
+            <option value="deviceA">PlayStation VR2</option>
+            <option value="deviceB">meta Oculus pro</option>
+            <option value="deviceC">Apple Vision Pro</option>
+            <option value="deviceD">Valve Pro</option>
+            <option value="deviceE">PS Pro</option>
+        </select>
+    </div>
+
+    <div class="comparison-result">
+        <h2>Comparison Result</h2>
+        <div id="comparison-table"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const device1Select = document.getElementById("device1");
+            const device2Select = document.getElementById("device2");
+            const comparisonTable = document.getElementById("comparison-table");
+
+            function compareDevices() {
+                const device1 = device1Select.value;
+                const device2 = device2Select.value;
+
+                // Define your comparison data here
+                const deviceData = {
+                    deviceA: {
+                        name: "PlayStation VR2",
+                        image: "img/ps-pic1.png",
+                        screen: "5.5 inches",
+                        Refresh: "90 Hz",
+                        battery: "2 Hours",
+                        hardware: "New Snapdragon XR2+ platform",
+                        price: "82,000 Rs",
+                    },
+                    deviceB: {
+                        name: "meta Oculus pro",
+                        image: "img/meta_pc1.png",
+                        screen: "OLED 5.7 inches",
+                        Refresh: "90 Hz",
+                        battery: "2 Hours",
+                        hardware: "New Snapdragon XR2+ platform",
+                        price: "58,000 Rs",
+                    },
+                    deviceC: {
+                        name: "Apple Vision Pro",
+                        image: "img/apple_pic1.png",
+                        screen: "5.8 inches",
+                        Refresh: "90 Hz",
+                        battery: "2 Hours",
+                        hardware: "Apple M2, Apple R1",
+                        price: "1,80,000 Rs",
+                    },
+                    deviceD: {
+                        name: "Valve Pro",
+                        image: "img/Valve1.png",
+                        screen: "5.2 inches",
+                        Refresh: "90 Hz",
+                        battery: "2 Hours",
+                        hardware: "New Snapdragon XR2+ platform",
+                        price: "50,000 Rs",
+                    },
+                    deviceE: {
+                        name: "PS Pro",
+                        image: "img/ps-pic1.png",
+                        screen: "6.4 inches",
+                        Refresh: "90 Hz",
+                        battery: "2 Hours",
+                        hardware: "New Snapdragon XR2+ platform",
+                        price: "1,00,000 Rs",
+                    },
+                };
+
+                const device1Data = deviceData[device1];
+                const device2Data = deviceData[device2];
+
+                const tableHTML = `
+                    <table>
+                        <tr>
+                            <th>Specification</th>
+                            <th>${device1Data.name}</th>
+                            <th>${device2Data.name}</th>
+                        </tr>
+                        <tr>
+                            <td>Image</td>
+                            <td><img src="${device1Data.image}" alt="${device1Data.name}" width="150"></td>
+                            <td><img src="${device2Data.image}" alt="${device2Data.name}" width="150"></td>
+                        </tr>
+                        <tr>
+                            <td>Screen Size</td>
+                            <td>${device1Data.screen}</td>
+                            <td>${device2Data.screen}</td>
+                        </tr>
+                        <tr>
+                            <td>Refresh Rate</td>
+                            <td>${device1Data.Refresh}</td>
+                            <td>${device2Data.Refresh}</td>
+                        </tr>
+                        <tr>
+                            <td>Battery</td>
+                            <td>${device1Data.battery}</td>
+                            <td>${device2Data.battery}</td>
+                        </tr>
+                        <tr>
+                            <td>Hardware</td>
+                            <td>${device1Data.hardware}</td>
+                            <td>${device2Data.hardware}</td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td style="font-size:5vh;">${device1Data.price}</td>
+                            <td style="font-size:5vh;">${device2Data.price}</td>
+                        </tr>
+                    </table>
+                `;
+
+                comparisonTable.innerHTML = tableHTML;
+            }
+
+            device1Select.addEventListener("change", compareDevices);
+            device2Select.addEventListener("change", compareDevices);
+        });
+    </script>
+</body>
+
+</html>

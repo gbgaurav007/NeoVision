@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <title>Game1</title>
+</head>
+<body class="g3">
+    <!-- Header -->
+    <div class="header">
+        <div class="headerLeft">
+            <div class="topdiv1box1">
+                <div class="companyName">
+                    <div>
+                        NeoVision
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerRight">
+            <div>
+                <button onclick="window.location='mainpage.html'">
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="bodyDiv">
+        <div class="leftDiv">
+            <div class="mainImg">
+                <!-- <div></div> -->
+                <img src="img/b1.png" alt="" id="change" />
+            </div>
+            <div class="optImg">
+                <div>
+                    <img src="img/b1.png" alt="" id="img/b1.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/b2.png" alt="" id="img/b2.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/b3.png" alt="" id="img/b3.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/b4.png" alt="" id="img/b4.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+            </div>
+        </div>
+        <div class="rightDiv">
+            <div class="heading">
+                Beat Saber
+                <div></div>
+            </div>
+            <div class="description">
+                Get your whole body moving in this rhythm-driven musical experience for PlayStation VR and VR2
+                <div></div>
+            </div>
+            <div class="specs">
+                <ul>
+                    <li>
+                        Beat Saber is a fast-paced VR experience combining breath-taking neon visuals, energising music, hand-crafted levels and fine-tuned action gameplay to get you in the flow.
+                    </li>
+                    <li>
+                        With one saber in each hand slash the beats as they fly towards you, matching their direction and colour to rack up points and keep the music moving!
+                    </li>
+                    <li>
+                        As the tempo increases you'll have to move your whole body to avoid incoming obstacles by side-stepping and ducking, all while keeping the rhythm and slashing the beats.
+                    </li>
+                </ul>
+            </div>
+            <div class="buy">
+                <div class="price">$14.00</div>
+                <div class="buttonDiv">
+                    <button onclick="window.location='pricing.html'">See Plans</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2023 All Rights Reserved. Designed by Gaurav Bansal
+    </div>
+
+    <script>
+        function changeImage(ele) {
+            var image_id = document.getElementById("change");
+            image_id.src = ele.id;
+        }
+    </script>
+</body>
+</html>

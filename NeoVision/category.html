@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Headsets Category</title>
+    <link rel="stylesheet" href="category.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="headerLeft">
+                <div class="topdiv1box1">
+                    <div class="companyName">
+                        <div>
+                            NeoVision
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerRight">
+                <div>
+                    <button onclick="window.location='mainpage.html'">
+                        Home
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h1>Category</h1>
+    </header>
+
+    <div class="product-list">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const productData = [
+                {
+                    name: "Meta Quest Pro",
+                    image: "img/meta_pc1.png",
+                    price: 54999,
+                    features: "120Hz, 360-degree vision, OLED 5.7 inches",
+                    link: "buyNow2.html"
+                },
+                {
+                    name: "Valve Pro",
+                    image: "img/Valve1.png",
+                    price: 119999,
+                    features: "120Hz,  360-degree vision, OLED 5.7 inches",
+                    link: "buynow4.html"
+                },
+                {
+                    name: "PlayStation VR",
+                    image: "img/ps-pic1.png",
+                    price: 59999,
+                    features: "120Hz,  360-degree vision, OLED 5.7 inches",
+                    link: "buyNow1.html"
+                },
+                {
+                    name: "Apple Vision Pro",
+                    image: "img/apple_pic2.png",
+                    price: 199999,
+                    features: "120Hz,  360-degree vision, OLED 5.7 inches",
+                    link: "buynow3.html"
+                },
+                {
+                    name: "PS Pro",
+                    image: "img/ps-pic2.png",
+                    price: 144999,
+                    features: "120Hz,  360-degree vision, OLED 5.7 inches",
+                    link: "buyNow1.html"
+                },
+            ];
+
+            const productContainer = document.querySelector(".product-list");
+
+            productData.forEach((product, index) => {
+                const productDiv = document.createElement("div");
+                productDiv.className = "product";
+
+                // Create an anchor tag to link to the product page
+                const productLink = document.createElement("a");
+                productLink.href = product.link;
+
+                const productImage = document.createElement("img");
+                productImage.src = product.image;
+                productImage.alt = product.name;
+
+                const productName = document.createElement("h2");
+                productName.textContent = product.name;
+
+                const productPrice = document.createElement("p");
+                productPrice.textContent = `Rs ${product.price.toFixed(2)}`;
+
+                const productFeatures = document.createElement("p");
+                productFeatures.textContent = `Features: ${product.features}`;
+
+                const addToCartButton = document.createElement("button");
+                addToCartButton.textContent = "Add to Cart";
+
+                addToCartButton.addEventListener("click", () => {
+                    alert(`Added ${product.name} to the cart!`);
+                });
+
+                // Append product information to the anchor tag
+                productLink.appendChild(productImage);
+                productLink.appendChild(productName);
+                productLink.appendChild(productPrice);
+                productLink.appendChild(productFeatures);
+                productLink.appendChild(addToCartButton);
+
+                // Append the anchor tag to the product container
+                productDiv.appendChild(productLink);
+                productContainer.appendChild(productDiv);
+            });
+        });
+    </script>
+</body>
+</html>

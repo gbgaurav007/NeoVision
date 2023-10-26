@@ -1,0 +1,219 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="header">
+        <div class="headerLeft">
+            <div class="topdiv1box1">
+                <div class="companyName">
+                    <div>
+                        NeoVision
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerRight">
+            <div>
+                <button onclick="window.location='mainpage.html'">
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <main class="questions">
+        <h1 class="faq-heading">Frequently Asked Questions</h1>
+        <img src="img/faq.png" class="faq-image">
+        <input type="text" id="searchInput" placeholder="Search for a Question" class="search">
+        <button onclick="searchFAQ()" class="searchbtn"><i class="fa fa-search"></i></button>
+
+        <div class="faq-container" id="faq">
+            <div class="faq-one">
+                <h3 class="faq-page">What is a VR headset?</h3>
+                <div class="faq-body">
+                    <p>
+                        A VR headset, or virtual reality headset, is a device that allows users to experience 
+                        and interact with a simulated 3D environment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-two">
+                <h3 class="faq-page">What are the different categories of VR headsets available at your website?</h3>
+                <div class="faq-body">
+                    <p>
+                        There are primarily five categories of VR headsets available: MetaQuest pro, Valve pro,
+                        Playstation VR, Apple vision pro and PS pro.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="faq-three">
+                <h3 class="faq-page">What is the difference between Playstation VR and Apple vision pro?</h3>
+                <div class="faq-body">
+                    <p>
+                        The Apple vision pro can be considered as a mixed reality headset, capable of both
+                        augmented reality and virtual reality. This opens up number of possibilities with this 
+                        headset, while the Playstation VR2 can only be used for virtual reality experiences.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="faq-four">
+                <h3 class="faq-page">Can VR headsets be used for purposes other than gaming?</h3>
+                <div class="faq-body">
+                    <p>
+                        Yes, VR headsets are used for various applications including education, training 
+                        simulations, virtual tours, and even therapeutic treatments.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-five">
+                <h3 class="faq-page">What kind of system requirements are needed for using a VR headset?</h3>
+                <div class="faq-body">
+                    <p>
+                        It depends on the type of VR headset. PC-connected headsets often require a 
+                        high-performance computer, while standalone headsets have their own specific 
+                        hardware requirements.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-six">
+                <h3 class="faq-page">Are VR headsets suitable for people with glasses?</h3>
+                <div class="faq-body">
+                    <p>
+                        Many VR headsets are designed to accommodate glasses. However, it's advisable to 
+                        check the specific product's specifications for this feature.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-seven">
+                <h3 class="faq-page">How do I set up a VR headset?</h3>
+                <div class="faq-body">
+                    <p>
+                        Setup procedures vary, but generally, you would need to connect the necessary cables 
+                        or sync with a compatible device, install required software, and calibrate the headset.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-eight">
+                <h3 class="faq-page">What are the factors to consider when choosing a VR headset?</h3>
+                <div class="faq-body">
+                    <p>
+                        Consider factors such as display resolution, refresh rate, field of view, comfort, 
+                        content availability, and price.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-nine">
+                <h3 class="faq-page">Can VR headsets cause any health issues?</h3>
+                <div class="faq-body">
+                    <p>
+                        Prolonged use of VR headsets may cause discomfort, such as eye strain, motion sickness, 
+                        or headaches in some users. Taking regular breaks is recommended.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-ten">
+                <h3 class="faq-page">What kind of content is available for VR headsets?</h3>
+                <div class="faq-body">
+                    <p>
+                        VR headsets offer a wide range of content, including immersive games, 360-degree videos, 
+                        educational experiences, and virtual tours of various locations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-eleven">
+                <h3 class="faq-page">Can VR headsets be used for watching movies or TV shows?</h3>
+                <div class="faq-body">
+                    <p>
+                        Yes, some VR headsets support watching movies and TV shows in a virtual theater-like 
+                        environment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-twelve">
+                <h3 class="faq-page">Are there any age restrictions for using VR headsets?</h3>
+                <div class="faq-body">
+                    <p>
+                        While there are no strict age restrictions, it's generally recommended that young 
+                        children use VR headsets under adult supervision and for limited periods.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-thirteen">
+                <h3 class="faq-page">Can I use VR headsets for social interaction and communication?</h3>
+                <div class="faq-body">
+                    <p>
+                        Yes, some VR headsets support social applications and platforms where users can 
+                        interact with each other in virtual environments.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-fourteen">
+                <h3 class="faq-page">What is the warranty period for VR headsets?</h3>
+                <div class="faq-body">
+                    <p>
+                        Warranty periods vary depending on the manufacturer and the specific product. It's 
+                        advisable to check the warranty information provided with the product.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <br><br><br><br>
+
+    <script>
+        var faq = document.getElementsByClassName("faq-page");
+        var i;
+        for (i = 0; i < faq.length; i++) {
+            faq[i].addEventListener("click", function () {
+                if (this.nextElementSibling.style.display === "block") {
+                    this.nextElementSibling.style.display = "none";
+                } else {
+                    this.nextElementSibling.style.display = "block";
+                }
+            });
+        }
+
+        function searchFAQ() {
+            var input, filter, faq, questions, i, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            faq = document.getElementById('faq');
+            questions = faq.getElementsByClassName('faq-page');
+
+            for (i = 0; i < questions.length; i++) {
+                txtValue = questions[i].textContent || questions[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    questions[i].style.display = "block";
+                } 
+                else {
+                    questions[i].style.display = "none";
+                }
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>

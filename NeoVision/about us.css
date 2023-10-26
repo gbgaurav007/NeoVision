@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+}
+body{
+    overflow: hidden;
+    background: rgb(32,6,61);
+    background: linear-gradient(22deg, rgb(32, 6, 61) 21%, rgb(51, 4, 111) 74%, rgba(98,0,238,1) 95%, rgb(142, 63, 255) 100%);
+}
+.outer-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: grey; */
+    min-height: 918px;
+}
+.square{
+    background-color: #6200EE;
+    display: flex;
+    height: 30%;
+    width: 45%;
+    margin: 43% auto 0 40%;
+    justify-content: end;
+    align-items:end;
+}
+
+.image{
+    overflow: hidden;
+    object-fit: cover;
+    margin: -62% 0 auto 15%;
+}
+.fade{
+    height: 25%;
+    fill: #6200EE;
+    width: 20%;
+    border-radius: 50%;
+    margin: -30% auto -23% 10%;
+}
+.circle{
+    height: 25%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: #6200EE;
+    margin: -40% auto 20% 70%;
+}
+
+.about{
+    height: 55%;
+    width: 35%;
+    padding: 5% 5%;
+    background: rgb(32,6,61,0.8);
+    background: linear-gradient(22deg, rgba(32,6,61,0.8) 31%, rgba(51,4,111,0.8) 54%, rgba(98,0,238,0.8) 93%, rgba(142,63,255,0.8) 100%);
+    margin: -30% auto 23% 45%;
+}
+.about h1{
+    font-weight: bold;
+}
+.about a{
+    text-decoration: none;
+    padding: 5% 10%;
+    background-color: rgb(98, 0, 238);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.about a:hover{
+    background-color: rgba(255, 255, 255);
+    color: #6200EE;
+
+}

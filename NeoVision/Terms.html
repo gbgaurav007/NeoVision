@@ -1,0 +1,55 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Terms stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <img src="img/terms.png" height="300px" width="400px" class="terms-img">
+        <div class="terms-heading">
+            <h1>Terms and<br>Conditions</h1>
+            <p>Welcome to our website. If you continue to browse and use this website, <br>
+                you are agreeing to comply with and be bound by the following terms and <br>
+                conditions of use, which together with our privacy policy govern our <br>
+                relationship with you in relation to this website.</p>
+            <button class="termsbtn" onclick="document.getElementById('id01').style.display='block'">More details</button>
+        </div>
+    </div>
+
+    <div id="id01" class="modal">
+        <div class="modal-content animate">
+            <i class="fa fa-file-text-o fa-3x"></i>
+            <h2>Terms and Conditions</h2>
+            <hr>
+            <div class="terms-content">
+                <p>The content of the pages of this website is for your general information and use only. 
+                It is subject to change without notice. This website uses cookies to monitor browsing 
+                preferences.<br><br><b>Neither we nor any third parties provide any warranty or guarantee as to 
+                the accuracy, timeliness, performance, completeness, or suitability of the information 
+                and materials found or offered on this website for any particular purpose.</b><br><br> Your use of 
+                any information or materials on this website is entirely at your own risk, for which we 
+                shall not be liable.<b>It shall be your own responsibility to ensure that any products, 
+                services, or information available through this website meet your specific requirements.</b><br><br>
+                This website contains material which is owned by or licensed to us. This material includes, 
+                but is not limited to, the design, layout, look, appearance, and graphics. Unauthorized use 
+                of this website may give rise to a claim for damages and/or be a criminal offense.</p>
+            </div>
+            <hr>
+            <button class="termsbtn2 decline" onclick="document.getElementById('id01').style.display='none'">Decline</button>
+            <button class="termsbtn accept" onclick="document.getElementById('id01').style.display='none'">Accept</button>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

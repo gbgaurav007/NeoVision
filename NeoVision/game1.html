@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <title>Game1</title>
+</head>
+<body class="g1">
+    <!-- Header -->
+    <div class="header">
+        <div class="headerLeft">
+            <div class="topdiv1box1">
+                <div class="companyName">
+                    <div>
+                        NeoVision
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerRight">
+            <div>
+                <button onclick="window.location='mainpage.html'">
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="bodyDiv">
+        <div class="leftDiv">
+            <div class="mainImg">
+                <!-- <div></div> -->
+                <img src="img/g1.png" alt="" id="change" />
+            </div>
+            <div class="optImg">
+                <div>
+                    <img src="img/g1.png" alt="" id="img/g1.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/g2.png" alt="" id="img/g2.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/g3.png" alt="" id="img/g3.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/g5.png" alt="" id="img/g5.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+            </div>
+        </div>
+        <div class="rightDiv">
+            <div class="heading">
+                Fracked
+                <div></div>
+            </div>
+            <div class="description">
+                Shoot, ski, and climb your way through an extreme VR adventure.
+                <div></div>
+            </div>
+            <div class="specs">
+                <ul>
+                    <li>
+                        Fracked is a PlayStation VR shooter that seamlessly combines relentless 'run-and-cover' gunfights with free and fluid skiing and climbing.
+                    </li>
+                    <li>
+                        Stranded in a remote mountain facility, you play as a reluctant hero forced into a final stand between the planet and a legion of interdimensional enemies. 
+                    </li>
+                    <li>
+                        Created by nDreams (Phantom: Covert Ops) for PS VR and PlayStation Move controllers, an innovative cover system will have you peeking out from behind environmental objects and outflanking enemies to gain the advantage.
+                    </li>
+                </ul>
+            </div>
+            <div class="buy">
+                <div class="price">$14.00</div>
+                <div class="buttonDiv">
+                    <button onclick="window.location='pricing.html'">See Plans</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2023 All Rights Reserved. Designed by Gaurav Bansal
+    </div>
+
+    <script>
+        function changeImage(ele) {
+            var image_id = document.getElementById("change");
+            image_id.src = ele.id;
+        }
+    </script>
+</body>
+</html>

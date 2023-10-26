@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="g2">
+    <!-- Header -->
+    <div class="header">
+        <div class="headerLeft">
+            <div class="topdiv1box1">
+                <div class="companyName">
+                    <div>
+                        NeoVision
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerRight">
+            <div>
+                <button onclick="window.location='mainpage.html'">
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="bodyDiv">
+        <div class="leftDiv">
+            <div class="mainImg">
+                <!-- <div></div> -->
+                <img src="img/z1.png" alt="" id="change" />
+            </div>
+            <div class="optImg">
+                <div>
+                    <img src="img/z1.png" alt="" id="img/z1.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/z2.png" alt="" id="img/z2.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/z3.png" alt="" id="img/z3.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+                <div>
+                    <img src="img/zwall.png" alt="" id="img/zwall.png" onclick="changeImage(this)"
+                        style="cursor: pointer;" />
+                </div>
+            </div>
+        </div>
+        <div class="rightDiv">
+            <div class="heading">
+                Zenith
+                <div></div>
+            </div>
+            <div class="description">
+                Immerse yourself in the first anime-inspired VR MMO, massively upgraded for PlayStation VR2
+                <div></div>
+            </div>
+            <div class="specs">
+                <ul>
+                    <li>
+                        Embark on an unforgettable adventure in Zenith - a massively multiplayer world built for VR.
+                    </li>
+                    <li>
+                        Set generations after the catastrophic Fracture, mortals and gods battle to prevent another disaster. Harness the magical lifeblood of Essence to become increasingly powerful, and join other players to experience a cast of colorful champions and villains in an epic tale.
+                    </li>
+                    <li>
+                        From the lush Amarite Forest to the hyper-futuristic city of Zenith, get lost in a beautiful, stylized fantasy world where you can climb, glide and cast spells to your heart's content.
+                    </li>
+                </ul>
+            </div>
+            <div class="buy">
+                <div class="price">$14.00</div>
+                <div class="buttonDiv">
+                    <button onclick="window.location='pricing.html'">See Plans</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2023 All Rights Reserved. Designed by Gaurav Bansal
+    </div>
+
+    <script>
+        function changeImage(ele) {
+            var image_id = document.getElementById("change");
+            image_id.src = ele.id;
+        }
+    </script>
+</body>
+</html>
